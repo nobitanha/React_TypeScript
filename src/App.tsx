@@ -4,6 +4,12 @@ import "./styles.css";
 import { Todo } from "./Todo";
 import { TodoType } from "./types/todo";
 import { Text } from "./Text";
+import { UserProfile } from "./UserProfile";
+
+const user = {
+  name: "hello"
+  //hobbies: ["映画", "ゲーム"]
+};
 
 export default function App() {
   const [todos, setTodos] = useState<Array<TodoType>>([]);
@@ -18,6 +24,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <UserProfile user={user}> </UserProfile>
       <Text color="red" fontSize="18px">
         aaaa
       </Text>
